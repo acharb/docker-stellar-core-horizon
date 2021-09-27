@@ -1,21 +1,30 @@
+# spec:
+#   name: docker-stellar-core-horizon
+#   services:
+#   - name: docker-stellar-core-horizon
+#     # dockerfile_path: Dockerfile
+#     # git:
+#     #   branch: acharb-quickdeploy
+#     #   repo_clone_url: https://github.com/stellar/docker-stellar-core-horizon.git
+#     # run_command: /start --standalone --randomize-network-passphrase
+#   # - name: docker-stellar-core-horizon
+#     image:
+#       registry_type: DOCKER_HUB
+#       registry: aleccharb21
+#       repository: quickstart-926
+#       tag: latest
+#     # run_command: /start --standalone --randomize-network-passphrase
+#     # image:
+#     #   registry_type: DOCKER_HUB
+#     #   registry: tutum
+#     #   repository: hello-world
+#     #   tag: latest
 spec:
-  name: docker-stellar-core-horizon
+  name: testing-image-deploy
   services:
-  - name: docker-stellar-core-horizon
-    # dockerfile_path: Dockerfile
-    # git:
-    #   branch: acharb-quickdeploy
-    #   repo_clone_url: https://github.com/stellar/docker-stellar-core-horizon.git
-    run_command: /start --standalone --randomize-network-passphrase
-  # - name: docker-stellar-core-horizon
+  - name: testing-image-deploy
     image:
       registry_type: DOCKER_HUB
-      registry: aleccharb21
-      repository: quickstart-926
+      registry: tutum
+      repository: hello-world
       tag: latest
-    # run_command: /start --standalone --randomize-network-passphrase
-    # image:
-    #   registry_type: DOCKER_HUB
-    #   registry: tutum
-    #   repository: hello-world
-    #   tag: latest
