@@ -1,5 +1,5 @@
 spec:
-#   name: docker-stellar-core-horizon
+  name: docker-stellar-core-horizon
 #   services:
 #   - name: docker-stellar-core-horizon
 #     # dockerfile_path: Dockerfile
@@ -19,8 +19,7 @@ spec:
 #     #   registry: tutum
 #     #   repository: hello-world
 #     #   tag: latest
-  worker:
-    name: docker-stellar-core-horizon
+  services:
   - name: docker-stellar-core-horizon
     image:
       registry_type: DOCR
