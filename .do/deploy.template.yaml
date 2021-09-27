@@ -1,4 +1,4 @@
-# spec:
+spec:
 #   name: docker-stellar-core-horizon
 #   services:
 #   - name: docker-stellar-core-horizon
@@ -19,12 +19,11 @@
 #     #   registry: tutum
 #     #   repository: hello-world
 #     #   tag: latest
-spec:
-  name: testing-image-deploy
-  services:
-  - name: testing-image-deploy
+  worker:
+    name: docker-stellar-core-horizon
+  - name: docker-stellar-core-horizon
     image:
-      registry_type: DOCKER_HUB
-      registry: tutum
-      repository: hello-world
+      registry_type: DOCR
+      repository: alec-stellar/quickstart-926
       tag: latest
+    run_command: /start --standalone --randomize-network-passphrase
