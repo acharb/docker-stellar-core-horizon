@@ -8,8 +8,8 @@ spec:
   #   name: docker-stellar-core-horizon
   #   run_command: /start --standalone --randomize-network-passphrase
   - image:
-    registry_type: DOCKER_HUB
-    registry: aleccharb21
-    repository: quickstart-926
-    tag: latest
+    - registry_type: DOCKER_HUB
+      registry: aleccharb21
+      repository: quickstart-926
+      tag: latest
     run_command: /start --standalone --randomize-network-passphrase
